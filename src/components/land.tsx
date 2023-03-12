@@ -1,11 +1,11 @@
+import Image from 'next/image'
 import React from 'react'
-import Image from 'next/image';
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import ComputerCanvas from "./Computers" 
 import { useInView } from "react-intersection-observer";
 
-function land() {
+function Land() {
   const { ref, inView } = useInView();
   const variantimage1 = {
       hidden: {
@@ -73,15 +73,15 @@ function land() {
     <p className='text-white text-9xl transform -rotate-90  ml-20  font-serif font-light' style={{ fontFamily: 'cursive' }} >Us</p>
   </div>
   <div className='pl-20 z-10 flex flex-row items-center -mt-40'>
-  <img className="z-20" width={400} height={300} src='https://static.wixstatic.com/media/ea1602_c487e7c1d11445ceb3473c56729809e6~mv2.png/v1/fill/w_824,h_462,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/ea1602_c487e7c1d11445ceb3473c56729809e6~mv2.png' alt='Huge and Long' />
-  <img src='https://adpearance.com/images/blog/lightvsdark.jpg' width={300} height={600} alt='Small and Wide' className='-ml-20' />
+  <Image className="z-20" width={400} height={300} src='https://static.wixstatic.com/media/ea1602_c487e7c1d11445ceb3473c56729809e6~mv2.png/v1/fill/w_824,h_462,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/ea1602_c487e7c1d11445ceb3473c56729809e6~mv2.png' alt='Huge and Long' />
+  <Image src='https://adpearance.com/images/blog/lightvsdark.jpg' width={300} height={600} alt='Small and Wide' className='-ml-20' />
 </div>
 </div>
   <div className='flex-1 pr-64 flex-row items-center mt-20' ref={ref}>
 
-    <p className='text-white text-zinc-400 font-serif font-light' style={{ fontFamily: 'cursive' }} >At our design agency, we understand that your brand is the heart of your business. That's why we prioritize getting to know you and your unique vision, goals, and values to create designs that truly reflect your brand and resonate with your target audience. Our team of talented designers, developers, and marketers work collaboratively with you to bring your brand to life through thoughtful and engaging designs that tell your story and connect with your customers.
+    <p className='text-white text-zinc-400 font-serif font-light' style={{ fontFamily: 'cursive' }} >At our design agency, we understand that your brand is the heart of your business. That is why we prioritize getting to know you and your unique vision, goals, and values to create designs that truly reflect your brand and resonate with your target audience. Our team of talented designers, developers, and marketers work collaboratively with you to bring your brand to life through thoughtful and engaging designs that tell your story and connect with your customers.
 
-We take pride in our ability to create designs that not only look great but also drive results. Whether you're looking to increase your online presence, improve your brand awareness, or boost your sales, our team has the experience and expertise to deliver exceptional designs that meet your specific needs and goals.
+We take pride in our ability to create designs that not only look great but also drive results. Whether you are looking to increase your online presence, improve your brand awareness, or boost your sales, our team has the experience and expertise to deliver exceptional designs that meet your specific needs and goals.
 
 In addition to our design services, we are dedicated to providing exceptional customer service and support throughout the entire design process and beyond. We understand that communication and transparency are key to building strong, lasting relationships with our clients, and we work hard to keep you informed and involved every step of the way.
 </p>
@@ -93,4 +93,4 @@ In addition to our design services, we are dedicated to providing exceptional cu
   )
 }
 
-export default land
+export default Land
