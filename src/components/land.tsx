@@ -73,8 +73,8 @@ function Land() {
     <p className='text-white text-9xl transform -rotate-90  ml-20  font-serif font-light' style={{ fontFamily: 'cursive' }} >Us</p>
   </div>
   <div className='pl-20 z-10 flex flex-row items-center -mt-40'>
-  <Image className="z-20" width={400} height={300} src='https://static.wixstatic.com/media/ea1602_c487e7c1d11445ceb3473c56729809e6~mv2.png/v1/fill/w_824,h_462,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/ea1602_c487e7c1d11445ceb3473c56729809e6~mv2.png' alt='Huge and Long' />
-  <Image src='https://adpearance.com/images/blog/lightvsdark.jpg' width={300} height={600} alt='Small and Wide' className='-ml-20' />
+  <img className="z-20" width={400} height={300} src='./wide.webp' alt='Huge and Long' />
+  <img src='./long.jpg' width={300} height={600} alt='Small and Wide' className='-ml-20' />
 </div>
 </div>
   <div className='flex-1 pr-64 flex-row items-center mt-20' ref={ref}>
